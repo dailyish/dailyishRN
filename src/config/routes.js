@@ -1,9 +1,11 @@
 import React from 'react';
 import { createStackNavigator, createDrawerNavigator, createAppContainer } from 'react-navigation';
 import { Icon } from 'react-native-elements';
-import TodayScreen from './screens/TodayScreen';
-import HabitsScreen from './screens/HabitsScreen';
-import { Header } from './components';
+
+import { Header } from '../components';
+
+import TodayScreen from '../screens/TodayScreen';
+import HabitsScreen from '../screens/HabitsScreen';
 
 const TodayStack = createStackNavigator(
   {

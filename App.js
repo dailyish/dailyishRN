@@ -1,13 +1,3 @@
-import React, { Component } from 'react';
-// import firebase from 'firebase';
-import AppContainer from './src/Router';
+import App from './src/index';
 
-export default class App extends Component {
-  componentWillMount() {
-    // Insert Firebase here
-  }
-
-  render() {
-    return <AppContainer />;
-  }
-}
+export default App;
