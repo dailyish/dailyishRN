@@ -1,14 +1,14 @@
-import colors from '../../colors';
-import palette from '../../palette';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
-const Header = {
+export default EStyleSheet.create({
   headerStyle: {
-    backgroundColor: colors.lightGreen
+    backgroundColor: '$lightGreen'
   },
-  headerTintColor: palette.headerTint,
   headerTitleStyle: {
+    color: '$darkGrey',
     fontWeight: 'bold'
+  },
+  headerBackTitleStyle: {
+    color: '$darkGrey'
   }
-};
-
-export default Header;
+});

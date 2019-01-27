@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from 'react-native-elements';
 import { TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import palette from '../../palette';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
 const propTypes = {
   onPress: PropTypes.func.isRequired,
@@ -12,16 +12,16 @@ const propTypes = {
 const defaultProps = {};
 
 const NavButton = ({ onPress, icon }) => {
-  const { NavButtonStyle } = styles;
+  const { NavButtonStyle, IconStyle } = styles;
 
   return (
     <TouchableOpacity onPress={onPress} style={NavButtonStyle}>
-      <Icon name={icon} color={palette.headerTint} />
+      <Icon name={icon} iconStyle={IconStyle} />
     </TouchableOpacity>
   );
 };
 
-const styles = {
+const styles = EStyleSheet.create({
   NavButtonStyle: {
     height: 45,
     width: 45,
@@ -30,8 +30,11 @@ const styles = {
     backgroundColor: 'rgba(250, 250, 250, 0)',
     borderRadius: 50,
     marginRight: 5
+  },
+  IconStyle: {
+    color: '$darkGrey'
   }
-};
+});
 
 export default NavButton;
 
