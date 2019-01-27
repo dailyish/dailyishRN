@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import HabitList from '../components';
+import HabitList from '../Components';
 
 export default class DailyScreen extends Component {
   static navigationOptions = {

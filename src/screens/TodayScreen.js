@@ -1,7 +1,7 @@
 /* eslint-disable lines-between-class-members */
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { NavButton, NavDrawerButton } from '../components';
+import { NavButton, NavDrawerButton } from '../Components';
 
 export default class TodayScreen extends Component {
   static navigationOptions = ({ navigation }) => ({

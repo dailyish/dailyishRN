@@ -2,7 +2,7 @@ import React from 'react';
 import { createStackNavigator, createDrawerNavigator, createAppContainer } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
-import { Header } from '../components';
+import { Header } from '../Components';
 
 import TodayScreen from '../screens/TodayScreen';
 import HabitsScreen from '../screens/HabitsScreen';

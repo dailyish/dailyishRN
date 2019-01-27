@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { NavDrawerButton, HabitList } from '../components';
+import { NavDrawerButton, HabitList } from '../Components';
 
 export default class HabitsScreen extends Component {
   static navigationOptions = ({ navigation }) => ({
