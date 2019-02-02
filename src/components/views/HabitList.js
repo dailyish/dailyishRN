@@ -17,13 +17,13 @@ const propTypes = {
 const defaultProps = {};
 
 class HabitList extends Component {
-  renderItems(habits) {
+  renderItems() {
+    const { habits } = this.props;
     return habits.map(habit => <TaskEdit key={habit.id} habit={habit} />);
   }
 
   render() {
-    const { habits } = this.props;
-    return <View>{this.renderItems(habits)}</View>;
+    return <View>{this.renderItems}</View>;
   }
 }
 
