@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
 // crr
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -23,7 +23,7 @@ class HabitList extends Component {
   }
 
   render() {
-    return <View>{this.renderItems}</View>;
+    return <View>{this.renderItems()}</View>;
   }
 }
 

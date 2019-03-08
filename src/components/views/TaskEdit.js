@@ -32,8 +32,8 @@ const styles = {
     backgroundColor: '#fff'
   },
   textStyle: {
-    fontSize: 16,
-    fontFamily: 'Roboto'
+    fontSize: 16
+    // fontFamily: 'Roboto'
   }
 };
 

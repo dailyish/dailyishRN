@@ -9,6 +9,10 @@ export default class HabitsScreen extends Component {
   });
 
   render() {
-    return <View style={{ flex: 1 }}>{<HabitList />}</View>;
+    return (
+      <View style={{ flex: 1 }}>
+        <HabitList />
+      </View>
+    );
   }
 }
