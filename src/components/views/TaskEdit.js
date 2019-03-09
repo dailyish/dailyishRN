@@ -1,12 +1,15 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-// const propTypes = {
-//   habit: PropTypes.function.isRequired
-// };
+const propTypes = {
+  habit: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string
+  }).isRequired
+};
 
-// const defaultProps = {};
+const defaultProps = {};
 
 const TaskEdit = ({ habit }) => (
   <View style={styles.containerStyle}>
@@ -39,5 +42,5 @@ const styles = {
 
 export default TaskEdit;
 
-// TaskEdit.propTypes = propTypes;
-// TaskEdit.defaultProps = defaultProps;
+TaskEdit.propTypes = propTypes;
+TaskEdit.defaultProps = defaultProps;
