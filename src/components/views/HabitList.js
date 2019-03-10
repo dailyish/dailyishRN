@@ -23,7 +23,7 @@ class HabitList extends Component {
   }
 
   render() {
-    return <View>{this.renderItems()}</View>;
+    return <View>{this.renderItems}</View>;
   }
 }
 
