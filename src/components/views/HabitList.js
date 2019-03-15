@@ -18,6 +18,7 @@ const defaultProps = {};
 
 class HabitList extends Component {
   renderItems() {
+    console.log(this.props);
     const { habits } = this.props;
     return habits.map(habit => <TaskEdit key={habit.id} habit={habit} />);
   }
